@@ -67,7 +67,7 @@ function TextTranslator({ text }) {
         </div>
       }
       {isTranslating &&
-        <Spinner text="Vertalen..." />
+        <Spinner text="Translating..." />
       }
       {translation &&
         <div className="mt-4 border p-2 rounded shadow-md bg-white w-full overflow-y-auto">

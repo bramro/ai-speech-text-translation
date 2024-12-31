@@ -6,7 +6,7 @@
   html {
     font-family: "Roboto Slab", system-ui, serif;
   }
-  a {
+  main a {
     @apply text-blue-600 underline hover:text-blue-800;
   }
 }
