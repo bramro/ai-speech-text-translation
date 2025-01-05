@@ -35,16 +35,16 @@ function AudioRecorder({ transcription, setTranscription }) {
           .then(arrayBuffer => context.decodeAudioData(arrayBuffer))
           .then(audioBuffer => {
             const audioData = audioBuffer.getChannelData(0);
-            resolve(audioData)
+            resolve(audioData);
           })
           .catch(error => {
-            console.log("Error in decodeAudioData", error)
-            reject(error)
+            console.log("Error in decodeAudioData:", error);
+            reject(error);
           });
       }
       audio.onerror = (error) => {
         console.error("Error loading audio source:", error);
-        reject(error)
+        reject(error);
       }
     });
   };
@@ -59,7 +59,7 @@ function AudioRecorder({ transcription, setTranscription }) {
         }
       };
       mediaRecorder.current.onstop = async () => {
-        const audioBlob = new Blob(audioChunks.current, { type: 'audio/webm' });
+        const audioBlob = new Blob(audioChunks.current, { type: 'audio/mp4' });
         setAudioURL(URL.createObjectURL(audioBlob));
         audioChunks.current = [];
         if (transcriber.current) {
