@@ -6,7 +6,7 @@ function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <span className="font-bold text-xl">Speech to text to translation</span>
         <h6 className="flex items-center gap-2 text-sm">
-          <a href="https://github.com/bramro/ai-speech-text-translation">View sourcecode on Github</a>
+          <a href="https://github.com/bramro/ai-speech-text-translation">View source code on GitHub</a>
           <FaGithub className="w-4 h-4" />
         </h6>
       </div>
