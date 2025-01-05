@@ -47,7 +47,7 @@ This will create an optimized build in the build folder.
 
 ## Important Notes
 
-- The browser will request microphone permissions for audio recording
-- ML models are downloaded when first visiting the page, which may take some time
-- All processing happens locally in the browser - no audio/text is sent to external servers
+- The browser will request microphone permissions for audio recording.
+- ML models are downloaded when first visiting the page, which may take some time.
+- All processing happens locally in the browser - no audio/text is sent to external servers.
 - This readme was written by Claude 3.5 Sonnet, based on the contents of this repository.
