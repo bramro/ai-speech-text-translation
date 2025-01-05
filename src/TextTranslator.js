@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { env, pipeline } from '@xenova/transformers';
 import Spinner from './Spinner';
 
